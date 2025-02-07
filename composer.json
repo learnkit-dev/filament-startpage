@@ -1,0 +1,34 @@
+{
+    "name": "learnkit/filament-startpage",
+    "description": "Startpage package for Filament",
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.0"
+    },
+    "require-dev": {
+        "spatie/laravel-ray": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Kloos",
+            "email": "sebastiaan@learnkit.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LearnKit\\Startpage\\": "src"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LearnKit\\Startpage\\StartpageServiceProvider"
+            ]
+        }
+    }
+}

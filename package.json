@@ -1,0 +1,19 @@
+{
+  "name": "filament-startpage",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "bun run postcss ./resources/css/startpage.css -o ./dist/app.css"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^4.0.4"
+  }
+}
