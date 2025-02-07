@@ -24,7 +24,7 @@ class StartpageServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../dist/app.css' => public_path('vendor/filament-startpage/app.css'),
+            __DIR__ . '/../resources/build/app.css' => public_path('vendor/filament-startpage/app.css'),
         ], 'startpage-assets');
     }
 }

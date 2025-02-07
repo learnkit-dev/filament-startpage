@@ -7,7 +7,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "bun run postcss ./resources/css/startpage.css -o ./dist/app.css"
+    "build": "bun run postcss ./resources/css/startpage.css -o ./resources/build/app.css"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.4",
