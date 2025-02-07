@@ -1,3 +1,7 @@
+@php use Filament\Support\Colors\Color; @endphp
+@php
+    $color = Color::hex(config('startpage.primary_color'));
+@endphp
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ config('app.name') }} - Start Page</title>
@@ -7,7 +11,9 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
     :root {
-        --primary-500: 0, 191, 255
+        @foreach($color as $shade => $color)
+        --primary-{{ $shade }}: {{ $color }};
+        @endforeach
     }
 
     body {

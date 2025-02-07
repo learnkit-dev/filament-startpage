@@ -15,5 +15,5 @@ return [
 
     'open_links_in_new_tab' => true,
 
-    'primary_color' => '#00BFFF',
+    'primary_color' => '#22c55e',
 ];
